@@ -1,0 +1,55 @@
+RewriteEngine on
+Options -Indexes
+DirectoryIndex controllers/user.php
+
+RewriteRule ^prueba$ controllers/info.php
+RewriteRule ^lista-empleados$ controllers/empleados.php
+RewriteRule ^prueba-([0-9]+)-([0-9]+)$ controllers/info.php?id=$1&f=$2
+RewriteRule ^prueba-([0-9]{1,12})-(.*)_JM-$ controllers/info.php?id=$1
+
+
+
+
+
+RewriteRule ^peliculas$ controller/peliculas.php
+
+
+RewriteRule ^funciones-([0-9]+)$ controller/detallepelicula.php?p=$1
+
+
+RewriteRule ^asientos$ controller/asientos.php
+
+
+RewriteRule ^pagos$   controller/pagos.php
+
+
+RewriteRule ^compra_realizada$  controller/comprado.php
+
+
+RewriteRule ^login$ controller/login.php
+
+
+RewriteRule ^logout$ controller/logout.php
+
+
+RewriteRule ^signup$ controller/signup.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
